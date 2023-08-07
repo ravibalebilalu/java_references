@@ -1,24 +1,29 @@
-//import scanner class from java utils package
 import java.util.Scanner;
-
-
 public class user_input{
     public static void main(String[] args) {
-        //declare scanner object
+        //initialize scanner object
         Scanner sc = new Scanner(System.in);
-        //ask user to input name
-        System.out.println("Enter your name ...");
-        //assign user name to name variable
+        
+        //ask user to enter name
+        System.out.println("Enter ypur name ...");
         String name = sc.nextLine();
 
-        //ask user to input age
-        System.out.println("Enter your Age..");
-        //asign user age to age variable
-        String age = sc.nextLine();
+        //ask user  to enter age
+        System.out.println("Enter your age...");
+        int age = sc.nextInt();
 
-        //print the name and age
-        System.out.println("Your name is "+ name + " and you are " + age + " year old.");
-        //close the scanner object
+        //ask user to enter about meritial state
+        System.out.println("Are you  married?");
+        System.out.println("If maried enter true, else false");
+        boolean ismarried = sc.nextBoolean();
+
+        //Ask user to enter weight
+        System.out.println("Enter your weight...");
+        double weight = sc.nextDouble();
+        //print all the informations
+        System.out.println(name + " of "+ age +" year old");
+        System.out.println("This person weight is " + weight + " kg and meritial state is "+ ismarried);
         sc.close();
+
     }
 }

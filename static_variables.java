@@ -4,9 +4,9 @@
  */
 class Book{
     String title;//changes with book
-    static String author = "Ravi";//static variable
+    static String author;//static variable: same author
     int edition;//changes with repitative publication 
-    static String publisher = "Rk publications";//static variable
+    static String publisher;//static variable:same publisher
     int pages; //changes with book
     int price;//changes with book and editions
 
@@ -29,10 +29,10 @@ class Book{
 public class static_variables {
     public static void main(String[] args) {
         Book b1 = new Book();
-        b1.title = "Java Simple";
-        //b1.author = "Ravi";//need not changes
+        b1.title = "Java Made Simple";
+        b1.author = "Ravi";//need not to change
         b1.edition = 1;
-        //b1.publisher = "Rk publications";//need not changes
+        b1.publisher = "Rk publications";//need not to change
         b1.pages = 230;
         b1.price = 250;
         System.out.println("First book :");
